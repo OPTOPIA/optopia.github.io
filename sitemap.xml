@@ -2,63 +2,63 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://blog.optopia.xyz/post/Monitorian-QSG/</loc>
+    <loc>https://blog.optopia.fun/post/Monitorian-QSG/</loc>
     
     <lastmod>2021-02-06</lastmod>
     
   </url>
   
   <url>
-    <loc>https://blog.optopia.xyz/tags/index.html</loc>
+    <loc>https://blog.optopia.fun/tags/index.html</loc>
     
     <lastmod>2021-02-06</lastmod>
     
   </url>
   
   <url>
-    <loc>https://blog.optopia.xyz/categories/index.html</loc>
+    <loc>https://blog.optopia.fun/categories/index.html</loc>
     
     <lastmod>2021-02-06</lastmod>
     
   </url>
   
   <url>
-    <loc>https://blog.optopia.xyz/post/muse-dash-free-player/</loc>
+    <loc>https://blog.optopia.fun/post/muse-dash-free-player/</loc>
     
     <lastmod>2021-02-06</lastmod>
     
   </url>
   
   <url>
-    <loc>https://blog.optopia.xyz/archives/index.html</loc>
+    <loc>https://blog.optopia.fun/archives/index.html</loc>
     
     <lastmod>2021-02-06</lastmod>
     
   </url>
   
   <url>
-    <loc>https://blog.optopia.xyz/post/introducing-for-quicklook/</loc>
+    <loc>https://blog.optopia.fun/post/introducing-for-quicklook/</loc>
     
     <lastmod>2021-02-06</lastmod>
     
   </url>
   
   <url>
-    <loc>https://blog.optopia.xyz/post/WSL2-Personal-Notes/</loc>
+    <loc>https://blog.optopia.fun/post/WSL2-Personal-Notes/</loc>
     
     <lastmod>2021-02-06</lastmod>
     
   </url>
   
   <url>
-    <loc>https://blog.optopia.xyz/post/CentOS7-firewalld-QSG/</loc>
+    <loc>https://blog.optopia.fun/post/CentOS7-firewalld-QSG/</loc>
     
     <lastmod>2021-02-06</lastmod>
     
   </url>
   
   <url>
-    <loc>https://blog.optopia.xyz/post/V2-domestic-transit-configuration/</loc>
+    <loc>https://blog.optopia.fun/post/V2-domestic-transit-configuration/</loc>
     
     <lastmod>2021-02-06</lastmod>
     
@@ -66,7 +66,7 @@
   
 
   <url>
-    <loc>https://blog.optopia.xyz/</loc>
+    <loc>https://blog.optopia.fun/</loc>
     <lastmod>2021-02-06</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
@@ -74,70 +74,70 @@
 
   
   <url>
-    <loc>https://blog.optopia.xyz/tags/Vps/</loc>
+    <loc>https://blog.optopia.fun/tags/Vps/</loc>
     <lastmod>2021-02-06</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://blog.optopia.xyz/tags/CentOS/</loc>
+    <loc>https://blog.optopia.fun/tags/CentOS/</loc>
     <lastmod>2021-02-06</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://blog.optopia.xyz/tags/firewalld/</loc>
+    <loc>https://blog.optopia.fun/tags/firewalld/</loc>
     <lastmod>2021-02-06</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://blog.optopia.xyz/tags/software/</loc>
+    <loc>https://blog.optopia.fun/tags/software/</loc>
     <lastmod>2021-02-06</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://blog.optopia.xyz/tags/recommend/</loc>
+    <loc>https://blog.optopia.fun/tags/recommend/</loc>
     <lastmod>2021-02-06</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://blog.optopia.xyz/tags/Efficient/</loc>
+    <loc>https://blog.optopia.fun/tags/Efficient/</loc>
     <lastmod>2021-02-06</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://blog.optopia.xyz/tags/Game/</loc>
+    <loc>https://blog.optopia.fun/tags/Game/</loc>
     <lastmod>2021-02-06</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://blog.optopia.xyz/tags/Music/</loc>
+    <loc>https://blog.optopia.fun/tags/Music/</loc>
     <lastmod>2021-02-06</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://blog.optopia.xyz/tags/WSL2/</loc>
+    <loc>https://blog.optopia.fun/tags/WSL2/</loc>
     <lastmod>2021-02-06</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://blog.optopia.xyz/tags/V2ray/</loc>
+    <loc>https://blog.optopia.fun/tags/V2ray/</loc>
     <lastmod>2021-02-06</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -146,21 +146,21 @@
 
   
   <url>
-    <loc>https://blog.optopia.xyz/categories/Server/</loc>
+    <loc>https://blog.optopia.fun/categories/Server/</loc>
     <lastmod>2021-02-06</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://blog.optopia.xyz/categories/Windows/</loc>
+    <loc>https://blog.optopia.fun/categories/Windows/</loc>
     <lastmod>2021-02-06</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://blog.optopia.xyz/categories/Game-related/</loc>
+    <loc>https://blog.optopia.fun/categories/Game-related/</loc>
     <lastmod>2021-02-06</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
