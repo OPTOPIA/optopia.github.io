@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.3.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+  <meta http-equiv="Cache-Control" content="no-transform">
+  <meta http-equiv="Cache-Control" content="no-siteapp">
+
+<link rel="stylesheet" href="/css/main.css">
+
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Noto Sans SC:300,300italic,400,400italic,700,700italic|Megrim:300,300italic,400,400italic,700,700italic|Roboto Mono:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/pace-js@1/themes/blue/pace-theme-minimal.css">
+  <script src="//cdn.jsdelivr.net/npm/pace-js@1/pace.min.js"></script>
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"blog.optopia.xyz","root":"/","scheme":"Mist","version":"7.7.2","exturl":false,"sidebar":{"position":"left","display":"always","padding":18,"offset":12,"onmobile":true},"copycode":{"enable":true,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":"valine","storage":true,"lazyload":false,"nav":null,"activeClass":"valine"},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+  </script>
+
+  <meta name="description" content="近期又重新拿起了以前在TapTap上面18元入手的音游 MuseDash ，并且一口气打到了180级。但是，基础包较后面的谱面难度相对较大，对于我这样的休闲养老玩家就太有难度了。无奈，看了看其他曲包，价格真的不便宜，想体验一下也没有办法。（故事要从一只蝙蝠讲起） 无奈之下去 Github 上搜了一波。欸嘿！果然有办法。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="音游 MuseDash 利用周免解锁体验全曲包">
+<meta property="og:url" content="https://blog.optopia.xyz/post/muse-dash-free-player/index.html">
+<meta property="og:site_name" content="O P T O P I A">
+<meta property="og:description" content="近期又重新拿起了以前在TapTap上面18元入手的音游 MuseDash ，并且一口气打到了180级。但是，基础包较后面的谱面难度相对较大，对于我这样的休闲养老玩家就太有难度了。无奈，看了看其他曲包，价格真的不便宜，想体验一下也没有办法。（故事要从一只蝙蝠讲起） 无奈之下去 Github 上搜了一波。欸嘿！果然有办法。">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/OPTOPIA/PicData/pic/Screenshot_2020-03-06-20-07-16-485_com.prpr.musedash.TapTap.jpg">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/OPTOPIA/PicData/pic/IMG_20200306_201736.jpg">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/OPTOPIA/PicData/pic/IMG_20200306_203235.jpg">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/OPTOPIA/PicData/pic/IMG_20200306_203557.jpg">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/OPTOPIA/PicData/pic/IMG_20200306_204113.jpg">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/OPTOPIA/PicData/pic/IMG_20200306_204607.jpg">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/OPTOPIA/PicData/pic/20200306_211050.gif">
+<meta property="article:published_time" content="2020-03-06T04:41:22.000Z">
+<meta property="article:modified_time" content="2021-02-06T21:06:06.588Z">
+<meta property="article:author" content="O P T O P I A">
+<meta property="article:tag" content="游戏">
+<meta property="article:tag" content="音乐">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/OPTOPIA/PicData/pic/Screenshot_2020-03-06-20-07-16-485_com.prpr.musedash.TapTap.jpg">
+
+<link rel="canonical" href="https://blog.optopia.xyz/post/muse-dash-free-player/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true
+  };
+</script>
+
+  <title>音游 MuseDash 利用周免解锁体验全曲包 | O P T O P I A</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <div>
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">O P T O P I A</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+        <h1 class="site-subtitle" itemprop="description">个人学习工作记录</h1>
+      
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+<nav class="site-nav">
+  
+  <ul id="menu" class="menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-fw fa-home"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-fw fa-tags"></i>标签</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-fw fa-th"></i>分类</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>归档</a>
+
+  </li>
+  </ul>
+
+</nav>
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content">
+            
+
+  <div class="posts-expand">
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://blog.optopia.xyz/post/muse-dash-free-player/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="O P T O P I A">
+      <meta itemprop="description" content=" | 廿四的个人博客 | ">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="O P T O P I A">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          音游 MuseDash 利用周免解锁体验全曲包
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-03-06 12:41:22" itemprop="dateCreated datePublished" datetime="2020-03-06T12:41:22+08:00">2020-03-06</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2021-02-07 05:06:06" itemprop="dateModified" datetime="2021-02-07T05:06:06+08:00">2021-02-07</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Game-related/" itemprop="url" rel="index"><span itemprop="name">游戏相关</span></a>
+                </span>
+            </span>
+
+          
+            <span id="/post/muse-dash-free-player/" class="post-meta-item leancloud_visitors" data-flag-title="音游 MuseDash 利用周免解锁体验全曲包" title="阅读次数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span class="leancloud-visitors-count"></span>
+            </span>
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="fa fa-comment-o"></i>
+      </span>
+      <span class="post-meta-item-text">Valine：</span>
+    
+    <a title="valine" href="/post/muse-dash-free-player/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/post/muse-dash-free-player/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p><img src="https://cdn.jsdelivr.net/gh/OPTOPIA/PicData/pic/Screenshot_2020-03-06-20-07-16-485_com.prpr.musedash.TapTap.jpg"></p>
+<p>近期又重新拿起了以前在TapTap上面18元入手的音游 MuseDash ，并且一口气打到了180级。但是，基础包较后面的谱面难度相对较大，对于我这样的休闲养老玩家就太有难度了。无奈，看了看其他曲包，价格真的不便宜，想体验一下也没有办法。（故事要从一只蝙蝠讲起）</p>
+<p>无奈之下去 Github 上搜了一波。欸嘿！果然有办法。</p>
+<a id="more"></a>
+
+<h2 id="写在前面"><a href="#写在前面" class="headerlink" title="写在前面"></a>写在前面</h2><p>首先附上原作者GitHub项目地址：<a target="_blank" rel="noopener" href="https://github.com/wuhan005/MuseDash_Free_Player">点击访问</a></p>
+<p>原理是通过 Golang 实现一个 HTTP(s) 代理，将 MuseDash 请求周免接口的返回进行修改。从而实现任意歌曲周免免费畅玩。</p>
+<p>该操作仅供体验，请勿用于商业用途。游戏开发不易，请支持正版！！！</p>
+<h2 id="搭建环境"><a href="#搭建环境" class="headerlink" title="搭建环境"></a>搭建环境</h2><div class="note info">
+            <p>本教程以安卓平台的 Termux 高级终端为例(小白级教程)，其他平台大同小异，请自行百度。</p>
+          </div>
+
+<p>首先，在酷安等应用商店安装好 Termux 高级终端 </p>
+<p><img src="https://cdn.jsdelivr.net/gh/OPTOPIA/PicData/pic/IMG_20200306_201736.jpg" alt="termux"></p>
+<h3 id="替换为-TUNA-镜像源"><a href="#替换为-TUNA-镜像源" class="headerlink" title="替换为 TUNA 镜像源"></a>替换为 TUNA 镜像源</h3><p>打开Termux，首先将源替换为清华源，方便加速国内下载。<br>使用如下命令自动替换官方源为 TUNA 镜像源</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sed -i &#39;s@^\(deb.*stable main\)$@#\1\ndeb https:&#x2F;&#x2F;mirrors.tuna.tsinghua.edu.cn&#x2F;termux stable main@&#39; $PREFIX&#x2F;etc&#x2F;apt&#x2F;sources.list</span><br><span class="line">apt update &amp;&amp; apt upgrade</span><br></pre></td></tr></table></figure>
+<h3 id="安装Go语言开发环境"><a href="#安装Go语言开发环境" class="headerlink" title="安装Go语言开发环境"></a>安装Go语言开发环境</h3><p>替换为清华源之后，安装Go语言开发环境</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pkg install golang -y</span><br></pre></td></tr></table></figure>
+<h3 id="安装Git"><a href="#安装Git" class="headerlink" title="安装Git"></a>安装Git</h3><p>因为是Github的项目，这里推荐使用Git进行管理</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pkg install git -y</span><br></pre></td></tr></table></figure>
+<div class="note info">
+            <p>如果实在不想安装Git，也可以直接去项目主页下载源码下来用。但是就不方便后续更新同步源码了。</p>
+          </div>
+
+<h2 id="同步源码及编译"><a href="#同步源码及编译" class="headerlink" title="同步源码及编译"></a>同步源码及编译</h2><p>使用以下命令克隆源码</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone https:&#x2F;&#x2F;github.com&#x2F;wuhan005&#x2F;MuseDash_Free_Player.git</span><br></pre></td></tr></table></figure>
+<p>完成后使用以下命令进行编译</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cd MuseDash_Free_Player</span><br><span class="line">go build</span><br></pre></td></tr></table></figure>
+<p>稍许等待一段时间后，输入 <code>ls</code>, 可以看到如下图，多出了一个 <code>MuseDash_Free_Player</code> 文件<br><img src="https://cdn.jsdelivr.net/gh/OPTOPIA/PicData/pic/IMG_20200306_203235.jpg"></p>
+<p>运行该文件</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">.&#x2F;MuseDash_Free_Player</span><br></pre></td></tr></table></figure>
+<p>返回如下值，即说明运行成功<br><img src="https://cdn.jsdelivr.net/gh/OPTOPIA/PicData/pic/IMG_20200306_203557.jpg"></p>
+<h2 id="开启服务"><a href="#开启服务" class="headerlink" title="开启服务"></a>开启服务</h2><p>保持 Termux 后台运行<br>进入浏览器，访问 <code>http://localhost:6789/</code>,进入如下页面</p>
+<p><img src="https://cdn.jsdelivr.net/gh/OPTOPIA/PicData/pic/IMG_20200306_204113.jpg"><br>点击 <code>设置代理</code> ,即可解锁曲包。</p>
+<h2 id="设置代理"><a href="#设置代理" class="headerlink" title="设置代理"></a>设置代理</h2><p>最后，在手机上设置http代理</p>
+<ul>
+<li>找到 <code>设置-WLAN-wifi设置-代理-手动设置</code></li>
+<li>主机名： <code>127.0.0.1</code> </li>
+<li>端口： <code>8089</code> （这里填入刚刚在网页上设置的代理端口，默认为<code>8089</code>）</li>
+<li>保存更改</li>
+</ul>
+<p><img src="https://cdn.jsdelivr.net/gh/OPTOPIA/PicData/pic/IMG_20200306_204607.jpg"></p>
+<h2 id="成果"><a href="#成果" class="headerlink" title="成果"></a>成果</h2><p>进入游戏后，点击曲包，可以看到所有的曲包都处于周免状态，这样就可以体验其他的曲包了。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/OPTOPIA/PicData/pic/20200306_211050.gif"></p>
+<h2 id="写在最后"><a href="#写在最后" class="headerlink" title="写在最后"></a>写在最后</h2><p>感谢原作者的无私贡献~<br>更多高级玩法，例如：</p>
+<ul>
+<li>利用交叉编译，编译为路由器可用的二进制文件，实现路由器代理(免去手机操作的麻烦)</li>
+<li>…</li>
+</ul>
+<h3 id="注意："><a href="#注意：" class="headerlink" title="注意："></a>注意：</h3><ul>
+<li>本方法仅供交流与学习</li>
+<li>请勿将本方法用作商业用途 ！！！</li>
+<li>体验后如有喜欢的曲包，请支持正版 ！！！</li>
+</ul>
+
+    </div>
+
+    
+    
+    
+        
+
+<div>
+<ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者： </strong>O P T O P I A
+  </li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    <a href="https://blog.optopia.xyz/post/muse-dash-free-player/" title="音游 MuseDash 利用周免解锁体验全曲包">https://blog.optopia.xyz/post/muse-dash-free-player/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" rel="noopener" target="_blank"><i class="fa fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+</div>
+
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/Game/" rel="tag"># 游戏</a>
+              <a href="/tags/Music/" rel="tag"># 音乐</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/post/introducing-for-quicklook/" rel="prev" title="介绍一款实用的 Window 预览软件 —— QuickLook">
+      <i class="fa fa-chevron-left"></i> 介绍一款实用的 Window 预览软件 —— QuickLook
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/post/WSL2-Personal-Notes/" rel="next" title="WSL2 个人学习笔记">
+      WSL2 个人学习笔记 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+  </div>
+
+
+          </div>
+          
+    <div class="comments" id="valine-comments"></div>
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%86%99%E5%9C%A8%E5%89%8D%E9%9D%A2"><span class="nav-number">1.</span> <span class="nav-text">写在前面</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%90%AD%E5%BB%BA%E7%8E%AF%E5%A2%83"><span class="nav-number">2.</span> <span class="nav-text">搭建环境</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%9B%BF%E6%8D%A2%E4%B8%BA-TUNA-%E9%95%9C%E5%83%8F%E6%BA%90"><span class="nav-number">2.1.</span> <span class="nav-text">替换为 TUNA 镜像源</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AE%89%E8%A3%85Go%E8%AF%AD%E8%A8%80%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83"><span class="nav-number">2.2.</span> <span class="nav-text">安装Go语言开发环境</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AE%89%E8%A3%85Git"><span class="nav-number">2.3.</span> <span class="nav-text">安装Git</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%90%8C%E6%AD%A5%E6%BA%90%E7%A0%81%E5%8F%8A%E7%BC%96%E8%AF%91"><span class="nav-number">3.</span> <span class="nav-text">同步源码及编译</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%BC%80%E5%90%AF%E6%9C%8D%E5%8A%A1"><span class="nav-number">4.</span> <span class="nav-text">开启服务</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%AE%BE%E7%BD%AE%E4%BB%A3%E7%90%86"><span class="nav-number">5.</span> <span class="nav-text">设置代理</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%88%90%E6%9E%9C"><span class="nav-number">6.</span> <span class="nav-text">成果</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%86%99%E5%9C%A8%E6%9C%80%E5%90%8E"><span class="nav-number">7.</span> <span class="nav-text">写在最后</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%B3%A8%E6%84%8F%EF%BC%9A"><span class="nav-number">7.1.</span> <span class="nav-text">注意：</span></a></li></ol></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">O P T O P I A</p>
+  <div class="site-description" itemprop="description"> | 廿四的个人博客 | </div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">6</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">3</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">10</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="https://github.com/OPTOPIA" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;OPTOPIA" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:729985301@qq.com" title="E-Mail → mailto:729985301@qq.com" rel="noopener" target="_blank"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+      </span>
+  </div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+<div class="copyright">
+  
+  &copy; 2020 – 
+  <span itemprop="copyrightYear">2021</span>
+  <span class="with-love">
+    <i class="fa fa-snowflake-o"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">O P T O P I A</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> 强力驱动
+  </div>
+  <span class="post-meta-divider">|</span>
+  <div class="theme-info">主题 – <a href="https://mist.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Mist</a>
+  </div>
+
+        
+
+
+
+
+
+
+  <script>
+  function leancloudSelector(url) {
+    url = encodeURI(url);
+    return document.getElementById(url).querySelector('.leancloud-visitors-count');
+  }
+  if (CONFIG.page.isPost) {
+    function addCount(Counter) {
+      var visitors = document.querySelector('.leancloud_visitors');
+      var url = decodeURI(visitors.id);
+      var title = visitors.dataset.flagTitle;
+
+      Counter('get', '/classes/Counter?where=' + encodeURIComponent(JSON.stringify({ url })))
+        .then(response => response.json())
+        .then(({ results }) => {
+          if (results.length > 0) {
+            var counter = results[0];
+            Counter('put', '/classes/Counter/' + counter.objectId, { time: { '__op': 'Increment', 'amount': 1 } })
+              .then(response => response.json())
+              .then(() => {
+                leancloudSelector(url).innerText = counter.time + 1;
+              })
+              .catch(error => {
+                console.error('Failed to save visitor count', error);
+              })
+          } else {
+              Counter('post', '/classes/Counter', { title, url, time: 1 })
+                .then(response => response.json())
+                .then(() => {
+                  leancloudSelector(url).innerText = 1;
+                })
+                .catch(error => {
+                  console.error('Failed to create', error);
+                });
+          }
+        })
+        .catch(error => {
+          console.error('LeanCloud Counter Error', error);
+        });
+    }
+  } else {
+    function showTime(Counter) {
+      var visitors = document.querySelectorAll('.leancloud_visitors');
+      var entries = [...visitors].map(element => {
+        return decodeURI(element.id);
+      });
+
+      Counter('get', '/classes/Counter?where=' + encodeURIComponent(JSON.stringify({ url: { '$in': entries } })))
+        .then(response => response.json())
+        .then(({ results }) => {
+          for (let url of entries) {
+            let target = results.find(item => item.url === url);
+            leancloudSelector(url).innerText = target ? target.time : 0;
+          }
+        })
+        .catch(error => {
+          console.error('LeanCloud Counter Error', error);
+        });
+    }
+  }
+
+  fetch('https://app-router.leancloud.cn/2/route?appId=0aRdc0pchs40gbOJnBxVS1fc-gzGzoHsz')
+    .then(response => response.json())
+    .then(({ api_server }) => {
+      var Counter = (method, url, data) => {
+        return fetch(`https://${api_server}/1.1${url}`, {
+          method,
+          headers: {
+            'X-LC-Id'     : '0aRdc0pchs40gbOJnBxVS1fc-gzGzoHsz',
+            'X-LC-Key'    : 'x34cbplNx3hzPry4WEm7XpfT',
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(data)
+        });
+      };
+      if (CONFIG.page.isPost) {
+        if (CONFIG.hostname !== location.hostname) return;
+        addCount(Counter);
+      } else if (document.querySelectorAll('.post-title-link').length >= 1) {
+        showTime(Counter);
+      }
+    });
+  </script>
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
+  <script src="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/muse.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  <script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+
+<script>
+NexT.utils.loadComments(document.querySelector('#valine-comments'), () => {
+  NexT.utils.getScript('//unpkg.com/valine/dist/Valine.min.js', () => {
+    var GUEST = ['nick', 'mail', 'link'];
+    var guest = 'nick,mail';
+    guest = guest.split(',').filter(item => {
+      return GUEST.includes(item);
+    });
+    new Valine({
+      el         : '#valine-comments',
+      verify     : true,
+      notify     : true,
+      appId      : '0aRdc0pchs40gbOJnBxVS1fc-gzGzoHsz',
+      appKey     : 'x34cbplNx3hzPry4WEm7XpfT',
+      placeholder: "快对我说点什么吧~",
+      avatar     : 'mm',
+      meta       : guest,
+      pageSize   : '10' || 10,
+      visitor    : false,
+      lang       : '' || 'zh-cn',
+      path       : location.pathname,
+      recordIP   : false,
+      serverURLs : ''
+    });
+  }, window.Valine);
+});
+</script>
+
+</body>
+</html>

@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.3.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+  <meta http-equiv="Cache-Control" content="no-transform">
+  <meta http-equiv="Cache-Control" content="no-siteapp">
+
+<link rel="stylesheet" href="/css/main.css">
+
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Noto Sans SC:300,300italic,400,400italic,700,700italic|Megrim:300,300italic,400,400italic,700,700italic|Roboto Mono:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/pace-js@1/themes/blue/pace-theme-minimal.css">
+  <script src="//cdn.jsdelivr.net/npm/pace-js@1/pace.min.js"></script>
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"blog.optopia.xyz","root":"/","scheme":"Mist","version":"7.7.2","exturl":false,"sidebar":{"position":"left","display":"always","padding":18,"offset":12,"onmobile":true},"copycode":{"enable":true,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":"valine","storage":true,"lazyload":false,"nav":null,"activeClass":"valine"},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+  </script>
+
+  <meta name="description" content="在浏览 Microsoft store 的时候，无意间发现一款名叫 QuickLook 的软件。看见图标还以为是一款文件搜索类的软件，好奇心驱使下，我点开了它。  此刻，我发现这是一个用于文件预览的软件。从来没有用过此类软件的我，秉承着试一试的心态，把他下载了下来。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="介绍一款实用的 Window 预览软件 —— QuickLook">
+<meta property="og:url" content="https://blog.optopia.xyz/post/introducing-for-quicklook/index.html">
+<meta property="og:site_name" content="O P T O P I A">
+<meta property="og:description" content="在浏览 Microsoft store 的时候，无意间发现一款名叫 QuickLook 的软件。看见图标还以为是一款文件搜索类的软件，好奇心驱使下，我点开了它。  此刻，我发现这是一个用于文件预览的软件。从来没有用过此类软件的我，秉承着试一试的心态，把他下载了下来。">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/OPTOPIA/PicData/pic/HR1EQ%25Y3%25%40%25N_R%5BUX%7BZ%24S9X.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/OPTOPIA/PicData/pic/video2gif_20200216_042937.gif">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/OPTOPIA/PicData/pic/P5O8%7B5I07K%7EN679WB%5B1P90X.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/OPTOPIA/PicData/pic/YY%25(S%25IS%24(O%24RD_PK6LKGJN.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/OPTOPIA/PicData/pic/asfdasflahflkshfal%3Bhfa.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/OPTOPIA/PicData/pic/TIM%E6%88%AA%E5%9B%BE20200216152658.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/OPTOPIA/PicData/pic/TIM%E6%88%AA%E5%9B%BE20200216153055.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/OPTOPIA/PicData/pic/ioqefjkbvqpowv.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/OPTOPIA/PicData/pic/dafagwhmkyldsfsefs.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/OPTOPIA/PicData/pic/TIM%E6%88%AA%E5%9B%BE20200216150428.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/OPTOPIA/PicData/pic/TIM%E6%88%AA%E5%9B%BE20200216151752.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/OPTOPIA/PicData/pic/TIM%E6%88%AA%E5%9B%BE20200216152233.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/OPTOPIA/PicData/pic/TIM%E6%88%AA%E5%9B%BE20200216154710.png">
+<meta property="article:published_time" content="2020-02-15T19:37:31.000Z">
+<meta property="article:modified_time" content="2021-02-06T21:06:06.587Z">
+<meta property="article:author" content="O P T O P I A">
+<meta property="article:tag" content="软件">
+<meta property="article:tag" content="推荐">
+<meta property="article:tag" content="高效">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/OPTOPIA/PicData/pic/HR1EQ%25Y3%25%40%25N_R%5BUX%7BZ%24S9X.png">
+
+<link rel="canonical" href="https://blog.optopia.xyz/post/introducing-for-quicklook/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true
+  };
+</script>
+
+  <title>介绍一款实用的 Window 预览软件 —— QuickLook | O P T O P I A</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <div>
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">O P T O P I A</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+        <h1 class="site-subtitle" itemprop="description">个人学习工作记录</h1>
+      
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+<nav class="site-nav">
+  
+  <ul id="menu" class="menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-fw fa-home"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-fw fa-tags"></i>标签</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-fw fa-th"></i>分类</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>归档</a>
+
+  </li>
+  </ul>
+
+</nav>
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content">
+            
+
+  <div class="posts-expand">
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://blog.optopia.xyz/post/introducing-for-quicklook/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="O P T O P I A">
+      <meta itemprop="description" content=" | 廿四的个人博客 | ">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="O P T O P I A">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          介绍一款实用的 Window 预览软件 —— QuickLook
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-02-16 03:37:31" itemprop="dateCreated datePublished" datetime="2020-02-16T03:37:31+08:00">2020-02-16</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2021-02-07 05:06:06" itemprop="dateModified" datetime="2021-02-07T05:06:06+08:00">2021-02-07</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Windows/" itemprop="url" rel="index"><span itemprop="name">Windows相关</span></a>
+                </span>
+            </span>
+
+          
+            <span id="/post/introducing-for-quicklook/" class="post-meta-item leancloud_visitors" data-flag-title="介绍一款实用的 Window 预览软件 —— QuickLook" title="阅读次数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span class="leancloud-visitors-count"></span>
+            </span>
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="fa fa-comment-o"></i>
+      </span>
+      <span class="post-meta-item-text">Valine：</span>
+    
+    <a title="valine" href="/post/introducing-for-quicklook/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/post/introducing-for-quicklook/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p>在浏览 Microsoft store 的时候，无意间发现一款名叫 QuickLook 的软件。看见图标还以为是一款文件搜索类的软件，好奇心驱使下，我点开了它。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/OPTOPIA/PicData/pic/HR1EQ%25Y3%25%40%25N_R%5BUX%7BZ%24S9X.png" alt="QuickLook 商店页面"></p>
+<p>此刻，我发现这是一个用于文件预览的软件。从来没有用过此类软件的我，秉承着试一试的心态，把他下载了下来。</p>
+<a id="more"></a>
+
+<h2 id="使用效果"><a href="#使用效果" class="headerlink" title="使用效果"></a>使用效果</h2><p>废话不多说，首先我们看看这个软件可以达到什么样的效果。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/OPTOPIA/PicData/pic/video2gif_20200216_042937.gif" alt="展示效果"></p>
+<p>可以看到，软件预览的速度很快，并且避免了诸如 PS、AI 等软件打开时漫长的加载过程。对于经常想要快速预览做好的稿件却不想等待PS、AI等软件漫长的加载过程的我来说，简直是香炸了，非常高效！！！</p>
+<p>值得一提的是，在预览一个文件的同时，单击另一个文件，会快速切换预览另一个文件。</p>
+<p>软件可以快速预览文件包括但不限于以下文件：</p>
+<ul>
+<li>几乎所有的图片格式: <code>.png, .apng, .jpg, .bmp, .gif, .psd, Camera RAW</code>,…</li>
+<li>压缩文档格式: <code>.zip, .rar, .tar.gz, .7z</code> 等.</li>
+<li><code>.pdf</code> 和 <code>.ai</code> 文件</li>
+<li>几乎所有的视频、音频格式: <code>.mp4, .mkv, .m2ts, .ogg, .mp3, .m4a</code>, 等.</li>
+<li>逗号分隔值文件 (<code>.csv</code>)</li>
+<li>邮件与 Outlook 邮件文件 (<code>.eml</code> 和 <code>.msg</code>)</li>
+<li>HTML 文件 (<code>.htm</code>, <code>.html</code>)</li>
+<li>Markdown 文件 (<code>.md, .markdown</code>)</li>
+<li>所有的文本文件 (由文件内容决定)</li>
+<li>…还有其他的文件类型依靠插件实现（如：Office系、Wps系、字体文件、3d模型等）</li>
+</ul>
+<h2 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h2><h3 id="基础使用方法"><a href="#基础使用方法" class="headerlink" title="基础使用方法"></a>基础使用方法</h3><ol>
+<li>下载并安装 QuickLook</li>
+<li>单击文件，并按 <code>空格键</code></li>
+</ol>
+<h3 id="进阶使用方法"><a href="#进阶使用方法" class="headerlink" title="进阶使用方法"></a>进阶使用方法</h3><ol>
+<li>运行 <code>QuickLook.exe</code> (只有在未设置随系统启动时，需要执行此步骤)</li>
+<li>选择一个文件或文件夹 (在桌面或资源管理器中)</li>
+<li>按 <code>空格键</code></li>
+<li>预览（可选择用置顶、自动关闭、默认方式打开、最大化预览、分享等）</li>
+<li>点击另一个文件，或使用 <code>方向键</code> 预览下一个文件 (方向键预览是在文件夹内，按照指定文件的方式进行选择预览，而不是依照某一顺序进行预览)</li>
+<li>再次点按 <code>空格键</code> 、点按 <code>ESC</code> 键，或按右上角的 <code>X</code> 号，都可以结束预览</li>
+</ol>
+<h3 id="快捷键的使用"><a href="#快捷键的使用" class="headerlink" title="快捷键的使用"></a>快捷键的使用</h3><ul>
+<li><code>空格键</code> 显示与隐藏预览窗口</li>
+<li><code>Esc</code> 隐藏预览窗口</li>
+<li><code>Enter</code> 打开/执行当前文件</li>
+<li><code>鼠标 ↑ ↓ ← →</code> 预览另一个文件</li>
+<li><code>鼠标滚轮</code> 放大缩小 (图片文件)</li>
+<li><code>Ctrl</code>+<code>鼠标滚轮</code> 放大缩小 (PDF文件)</li>
+<li><code>鼠标滚轮</code> 增加/减少音量</li>
+</ul>
+<h3 id="安装方式"><a href="#安装方式" class="headerlink" title="安装方式"></a>安装方式</h3><p>经过一番研究后，发现本软件实际上是一项在 Github 上的开源项目。项目地址如下：<a target="_blank" rel="noopener" href="https://github.com/QL-Win/QuickLook">QuickLook_Github</a></p>
+<p>我们可以根据自己的需求选择从 Microsoft Store 下载，或者从 Github 的 Release 页面下载。当然为了方便不会使用的 Github 的同学，文末我会放上百度网盘链接供下载。</p>
+<p>安装过程并不复杂，这里就不赘述。</p>
+<h2 id="插件"><a href="#插件" class="headerlink" title="插件"></a>插件</h2><h3 id="插件列表"><a href="#插件列表" class="headerlink" title="插件列表"></a>插件列表</h3><table>
+<thead>
+<tr>
+<th>插件名称</th>
+<th>最新版本</th>
+<th>更新时间</th>
+<th>下载地址</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>EpubViewer</td>
+<td>v1</td>
+<td>2018-09-02</td>
+<td><a target="_blank" rel="noopener" href="https://github.com/QL-Win/QuickLook.Plugin.EpubViewer/releases">Link</a></td>
+<td>查看 .epub 格式的电子书</td>
+</tr>
+<tr>
+<td>OfficeViewer</td>
+<td>v3</td>
+<td>2019-04-04</td>
+<td><a target="_blank" rel="noopener" href="https://github.com/QL-Win/QuickLook.Plugin.OfficeViewer/releases">Link</a></td>
+<td>免安装 MS Office 并预览其文件</td>
+</tr>
+<tr>
+<td>OfficeViewer-Native</td>
+<td>v1</td>
+<td>2019-03-30</td>
+<td><a target="_blank" rel="noopener" href="https://github.com/QL-Win/QuickLook.Plugin.OfficeViewer-Native/releases">Link</a></td>
+<td>在已安装 MS Office/WPS Office 的情况下预览其文件</td>
+</tr>
+<tr>
+<td>HelixViewer</td>
+<td>v1.0.1-beta</td>
+<td>2018-10-24</td>
+<td><a target="_blank" rel="noopener" href="https://github.com/jeremyhart/QuickLook.Plugin.HelixViewer/releases">Link</a></td>
+<td>预览3D模型</td>
+</tr>
+<tr>
+<td>FontViewer</td>
+<td>v1.0.0</td>
+<td>2018-10-23</td>
+<td><a target="_blank" rel="noopener" href="https://github.com/jeremyhart/QuickLook.Plugin.FontViewer/releases">Link</a></td>
+<td>预览字体文件, 支持 .otf 与 .ttf</td>
+</tr>
+<tr>
+<td>ShapefileViewer</td>
+<td>v1.0.1</td>
+<td>2019-01-12</td>
+<td><a target="_blank" rel="noopener" href="https://github.com/birderyu/QuickLook.Plugin.ShapefileViewer/releases">Link</a></td>
+<td>预览 ESRI .shp Shapefiles 文件</td>
+</tr>
+</tbody></table>
+<div class="note warning">
+            <p>这里提到的版本信息，为 2020-2-16 的最新版本，后续更新以Github更新为准。附地址：<a target="_blank" rel="noopener" href="https://github.com/QL-Win/QuickLook/wiki/Available-Plugins">Github</a></p>
+          </div>
+
+<h3 id="插件的安装"><a href="#插件的安装" class="headerlink" title="插件的安装"></a>插件的安装</h3><p>QuickLook的插件安装方法非常简单：</p>
+<ol>
+<li>安装好QuickLook。</li>
+<li>下载后缀名为 .qlplugin 的插件文件。</li>
+<li>选中插件文件，并按下空格键。</li>
+<li>点击左下角 Click here to install this plugin. 并显示 Done! please restart QuickLook</li>
+<li>重启QuickLook，安装结束。</li>
+</ol>
+<p><img src="https://cdn.jsdelivr.net/gh/OPTOPIA/PicData/pic/P5O8%7B5I07K%7EN679WB%5B1P90X.png" alt="安装插件"></p>
+<h2 id="各类文件预览效果"><a href="#各类文件预览效果" class="headerlink" title="各类文件预览效果"></a>各类文件预览效果</h2><h3 id="视频类"><a href="#视频类" class="headerlink" title="视频类"></a>视频类</h3><p><img src="https://cdn.jsdelivr.net/gh/OPTOPIA/PicData/pic/YY%25(S%25IS%24(O%24RD_PK6LKGJN.png" alt="视频预览"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/OPTOPIA/PicData/pic/asfdasflahflkshfal%3Bhfa.png" alt="小框置顶"></p>
+<p>这完全就是一个播放器，还支持置顶，自定义尺寸，可以缩小放在一边摸鱼。<br>不支持方向键快进快退，有点遗憾，但是对于预览来说够用了。</p>
+<h3 id="音频类"><a href="#音频类" class="headerlink" title="音频类"></a>音频类</h3><p><img src="https://cdn.jsdelivr.net/gh/OPTOPIA/PicData/pic/TIM%E6%88%AA%E5%9B%BE20200216152658.png" alt="音乐预览"></p>
+<p>音乐预览会直接播放，并且支持的格式也比较全面，界面也应轻量化的。<br>当然，不支持像网易云音乐自家的 <code>.ncm</code> 格式，毕竟版权在那。</p>
+<h3 id="图片类"><a href="#图片类" class="headerlink" title="图片类"></a>图片类</h3><p><img src="https://cdn.jsdelivr.net/gh/OPTOPIA/PicData/pic/TIM%E6%88%AA%E5%9B%BE20200216153055.png"><br>支持 Camera Raw 格式的预览，很赞！！！ 亲测索尼家用的 <code>.ARW</code> 和奥林巴斯家用的 <code>.DNG</code> 都是支持的。</p>
+<p>其他类型的图片文档就不再赘述，支持的文件类型很多，PS、AI 等预览都很快速。</p>
+<h3 id="文档类"><a href="#文档类" class="headerlink" title="文档类"></a>文档类</h3><h4 id="Markdown-文档"><a href="#Markdown-文档" class="headerlink" title="Markdown 文档"></a>Markdown 文档</h4><p><img src="https://cdn.jsdelivr.net/gh/OPTOPIA/PicData/pic/ioqefjkbvqpowv.png" alt="Markdown文档预览"><br>Markdown文档可以直接预览，并且带有导航栏，不错。</p>
+<p>不过，希望后续可以支持语法高亮。</p>
+<h4 id="HTML-文件"><a href="#HTML-文件" class="headerlink" title="HTML 文件"></a>HTML 文件</h4><p><img src="https://cdn.jsdelivr.net/gh/OPTOPIA/PicData/pic/dafagwhmkyldsfsefs.png" alt="HTML文件预览"><br>HTML文件是直接渲染，而不是显示代码，这点需要注意。其实逻辑上也没毛病。</p>
+<h4 id="其他类型文档"><a href="#其他类型文档" class="headerlink" title="其他类型文档"></a>其他类型文档</h4><p><img src="https://cdn.jsdelivr.net/gh/OPTOPIA/PicData/pic/TIM%E6%88%AA%E5%9B%BE20200216150428.png" alt="js文件"><br>常用文档显示都是如此，并且支持语法高亮，舒服！实测包括 JS、Json、yml、Python 等文件都支持语法高亮。</p>
+<p>在装插件之后，Word、Excel、Powerpoint 等文件也都支持预览，但需要 1~2 秒的时间渲染。</p>
+<div class="note warning">
+            <p>文档类的预览是不支持编辑的，毕竟只是预览，逻辑上没毛病。</p>
+          </div>
+
+<h3 id="压缩文件"><a href="#压缩文件" class="headerlink" title="压缩文件"></a>压缩文件</h3><p><img src="https://cdn.jsdelivr.net/gh/OPTOPIA/PicData/pic/TIM%E6%88%AA%E5%9B%BE20200216151752.png" alt="压缩文件"><br>这里就比较鸡肋了，支持的类型挺多的，可以打开目录层级。但只能预览，不支持打开文件，不支持解压文件。</p>
+<p>传统解压软件打开速度够快，功能也更全面，个人认为压缩文件没必要用 QuickLook 进行预览。</p>
+<h3 id="字体文件"><a href="#字体文件" class="headerlink" title="字体文件"></a>字体文件</h3><p><img src="https://cdn.jsdelivr.net/gh/OPTOPIA/PicData/pic/TIM%E6%88%AA%E5%9B%BE20200216152233.png" alt="字体文件"><br>预览足够迅速，渲染也还不错。</p>
+<h3 id="3D模型的预览"><a href="#3D模型的预览" class="headerlink" title="3D模型的预览"></a>3D模型的预览</h3><p><img src="https://cdn.jsdelivr.net/gh/OPTOPIA/PicData/pic/TIM%E6%88%AA%E5%9B%BE20200216154710.png" alt="3d模型预览"><br>预览时，渲染素模，不会加载贴图文件。小模型预览迅速，大模型则需要一定的加载时间，并且大模型会卡顿。</p>
+<p>支持的文件格式不多，基本全是3D模型的通用格式，像自动桌 Autodesk 家的 <code>.FBX</code>、犀牛家的 <code>.3DM</code>、Creo家的 <code>.PRT\.ASM</code> 等都是不支持的。</p>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><h3 id="个人感想"><a href="#个人感想" class="headerlink" title="个人感想"></a>个人感想</h3><p>总的来说，对于本人最实用的功能绝对是 PS、AI 这类特殊文件的预览功能。正常打开他们需要极长的时间去加载软件，而用 QuickLook 之后可以节约很多时间，够迅速也够方便！！！</p>
+<p>3D模型的预览，我本来是很期待的，但可惜支持的格式太少，实际使用场景并不多。真希望可以多支持一些格式，造福我们这些工业设计生。</p>
+<p>其他格式的预览个人认为因人而异，像视频、音频、图片等 QuickLook 的预览速度很快，但原生软件启动也比较迅速。这里就要看个人习惯问题了。</p>
+<h3 id="百度网盘下载地址"><a href="#百度网盘下载地址" class="headerlink" title="百度网盘下载地址"></a>百度网盘下载地址</h3><p>为了方便不便于使用 Github 和 Microsoft Store 的同学使用，我准备了网盘的下载地址供大家使用：</p>
+<ul>
+<li>百度网盘：<a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1E_w80XfMZRjTLkyhxC7wXg">点我下载</a> 提取码: <code>2333</code></li>
+<li>蓝奏云： <a target="_blank" rel="noopener" href="https://www.lanzous.com/b00z8jjcj">点我下载</a> 密码:<code>evx1</code></li>
+</ul>
+<h2 id="写在最后"><a href="#写在最后" class="headerlink" title="写在最后"></a>写在最后</h2><ul>
+<li>感谢 Github 开源社区，以及 QuickLook 的开发人员、相关插件的制作者，还有其他参与者</li>
+<li>本文部分内容参考官方文档进行翻译。</li>
+<li>更多详情请前往 QuickLook 项目主页：<a target="_blank" rel="noopener" href="https://github.com/QL-Win/QuickLook">https://github.com/QL-Win/QuickLook</a></li>
+</ul>
+
+    </div>
+
+    
+    
+    
+        
+
+<div>
+<ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者： </strong>O P T O P I A
+  </li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    <a href="https://blog.optopia.xyz/post/introducing-for-quicklook/" title="介绍一款实用的 Window 预览软件 —— QuickLook">https://blog.optopia.xyz/post/introducing-for-quicklook/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" rel="noopener" target="_blank"><i class="fa fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+</div>
+
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/software/" rel="tag"># 软件</a>
+              <a href="/tags/recommend/" rel="tag"># 推荐</a>
+              <a href="/tags/Efficient/" rel="tag"># 高效</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/post/CentOS7-firewalld-QSG/" rel="prev" title="CentOS7使用firewalld打开与关闭防火墙与端口">
+      <i class="fa fa-chevron-left"></i> CentOS7使用firewalld打开与关闭防火墙与端口
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/post/muse-dash-free-player/" rel="next" title="音游 MuseDash 利用周免解锁体验全曲包">
+      音游 MuseDash 利用周免解锁体验全曲包 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+  </div>
+
+
+          </div>
+          
+    <div class="comments" id="valine-comments"></div>
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BD%BF%E7%94%A8%E6%95%88%E6%9E%9C"><span class="nav-number">1.</span> <span class="nav-text">使用效果</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BD%BF%E7%94%A8"><span class="nav-number">2.</span> <span class="nav-text">使用</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%9F%BA%E7%A1%80%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95"><span class="nav-number">2.1.</span> <span class="nav-text">基础使用方法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%BF%9B%E9%98%B6%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95"><span class="nav-number">2.2.</span> <span class="nav-text">进阶使用方法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%BF%AB%E6%8D%B7%E9%94%AE%E7%9A%84%E4%BD%BF%E7%94%A8"><span class="nav-number">2.3.</span> <span class="nav-text">快捷键的使用</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AE%89%E8%A3%85%E6%96%B9%E5%BC%8F"><span class="nav-number">2.4.</span> <span class="nav-text">安装方式</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%8F%92%E4%BB%B6"><span class="nav-number">3.</span> <span class="nav-text">插件</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%8F%92%E4%BB%B6%E5%88%97%E8%A1%A8"><span class="nav-number">3.1.</span> <span class="nav-text">插件列表</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%8F%92%E4%BB%B6%E7%9A%84%E5%AE%89%E8%A3%85"><span class="nav-number">3.2.</span> <span class="nav-text">插件的安装</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%90%84%E7%B1%BB%E6%96%87%E4%BB%B6%E9%A2%84%E8%A7%88%E6%95%88%E6%9E%9C"><span class="nav-number">4.</span> <span class="nav-text">各类文件预览效果</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%A7%86%E9%A2%91%E7%B1%BB"><span class="nav-number">4.1.</span> <span class="nav-text">视频类</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%9F%B3%E9%A2%91%E7%B1%BB"><span class="nav-number">4.2.</span> <span class="nav-text">音频类</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%9B%BE%E7%89%87%E7%B1%BB"><span class="nav-number">4.3.</span> <span class="nav-text">图片类</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%96%87%E6%A1%A3%E7%B1%BB"><span class="nav-number">4.4.</span> <span class="nav-text">文档类</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Markdown-%E6%96%87%E6%A1%A3"><span class="nav-number">4.4.1.</span> <span class="nav-text">Markdown 文档</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#HTML-%E6%96%87%E4%BB%B6"><span class="nav-number">4.4.2.</span> <span class="nav-text">HTML 文件</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%85%B6%E4%BB%96%E7%B1%BB%E5%9E%8B%E6%96%87%E6%A1%A3"><span class="nav-number">4.4.3.</span> <span class="nav-text">其他类型文档</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%8E%8B%E7%BC%A9%E6%96%87%E4%BB%B6"><span class="nav-number">4.5.</span> <span class="nav-text">压缩文件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AD%97%E4%BD%93%E6%96%87%E4%BB%B6"><span class="nav-number">4.6.</span> <span class="nav-text">字体文件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3D%E6%A8%A1%E5%9E%8B%E7%9A%84%E9%A2%84%E8%A7%88"><span class="nav-number">4.7.</span> <span class="nav-text">3D模型的预览</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%80%BB%E7%BB%93"><span class="nav-number">5.</span> <span class="nav-text">总结</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%AA%E4%BA%BA%E6%84%9F%E6%83%B3"><span class="nav-number">5.1.</span> <span class="nav-text">个人感想</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%99%BE%E5%BA%A6%E7%BD%91%E7%9B%98%E4%B8%8B%E8%BD%BD%E5%9C%B0%E5%9D%80"><span class="nav-number">5.2.</span> <span class="nav-text">百度网盘下载地址</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%86%99%E5%9C%A8%E6%9C%80%E5%90%8E"><span class="nav-number">6.</span> <span class="nav-text">写在最后</span></a></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">O P T O P I A</p>
+  <div class="site-description" itemprop="description"> | 廿四的个人博客 | </div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">6</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">3</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">10</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="https://github.com/OPTOPIA" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;OPTOPIA" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:729985301@qq.com" title="E-Mail → mailto:729985301@qq.com" rel="noopener" target="_blank"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+      </span>
+  </div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+<div class="copyright">
+  
+  &copy; 2020 – 
+  <span itemprop="copyrightYear">2021</span>
+  <span class="with-love">
+    <i class="fa fa-snowflake-o"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">O P T O P I A</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> 强力驱动
+  </div>
+  <span class="post-meta-divider">|</span>
+  <div class="theme-info">主题 – <a href="https://mist.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Mist</a>
+  </div>
+
+        
+
+
+
+
+
+
+  <script>
+  function leancloudSelector(url) {
+    url = encodeURI(url);
+    return document.getElementById(url).querySelector('.leancloud-visitors-count');
+  }
+  if (CONFIG.page.isPost) {
+    function addCount(Counter) {
+      var visitors = document.querySelector('.leancloud_visitors');
+      var url = decodeURI(visitors.id);
+      var title = visitors.dataset.flagTitle;
+
+      Counter('get', '/classes/Counter?where=' + encodeURIComponent(JSON.stringify({ url })))
+        .then(response => response.json())
+        .then(({ results }) => {
+          if (results.length > 0) {
+            var counter = results[0];
+            Counter('put', '/classes/Counter/' + counter.objectId, { time: { '__op': 'Increment', 'amount': 1 } })
+              .then(response => response.json())
+              .then(() => {
+                leancloudSelector(url).innerText = counter.time + 1;
+              })
+              .catch(error => {
+                console.error('Failed to save visitor count', error);
+              })
+          } else {
+              Counter('post', '/classes/Counter', { title, url, time: 1 })
+                .then(response => response.json())
+                .then(() => {
+                  leancloudSelector(url).innerText = 1;
+                })
+                .catch(error => {
+                  console.error('Failed to create', error);
+                });
+          }
+        })
+        .catch(error => {
+          console.error('LeanCloud Counter Error', error);
+        });
+    }
+  } else {
+    function showTime(Counter) {
+      var visitors = document.querySelectorAll('.leancloud_visitors');
+      var entries = [...visitors].map(element => {
+        return decodeURI(element.id);
+      });
+
+      Counter('get', '/classes/Counter?where=' + encodeURIComponent(JSON.stringify({ url: { '$in': entries } })))
+        .then(response => response.json())
+        .then(({ results }) => {
+          for (let url of entries) {
+            let target = results.find(item => item.url === url);
+            leancloudSelector(url).innerText = target ? target.time : 0;
+          }
+        })
+        .catch(error => {
+          console.error('LeanCloud Counter Error', error);
+        });
+    }
+  }
+
+  fetch('https://app-router.leancloud.cn/2/route?appId=0aRdc0pchs40gbOJnBxVS1fc-gzGzoHsz')
+    .then(response => response.json())
+    .then(({ api_server }) => {
+      var Counter = (method, url, data) => {
+        return fetch(`https://${api_server}/1.1${url}`, {
+          method,
+          headers: {
+            'X-LC-Id'     : '0aRdc0pchs40gbOJnBxVS1fc-gzGzoHsz',
+            'X-LC-Key'    : 'x34cbplNx3hzPry4WEm7XpfT',
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(data)
+        });
+      };
+      if (CONFIG.page.isPost) {
+        if (CONFIG.hostname !== location.hostname) return;
+        addCount(Counter);
+      } else if (document.querySelectorAll('.post-title-link').length >= 1) {
+        showTime(Counter);
+      }
+    });
+  </script>
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
+  <script src="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/muse.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  <script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+
+<script>
+NexT.utils.loadComments(document.querySelector('#valine-comments'), () => {
+  NexT.utils.getScript('//unpkg.com/valine/dist/Valine.min.js', () => {
+    var GUEST = ['nick', 'mail', 'link'];
+    var guest = 'nick,mail';
+    guest = guest.split(',').filter(item => {
+      return GUEST.includes(item);
+    });
+    new Valine({
+      el         : '#valine-comments',
+      verify     : true,
+      notify     : true,
+      appId      : '0aRdc0pchs40gbOJnBxVS1fc-gzGzoHsz',
+      appKey     : 'x34cbplNx3hzPry4WEm7XpfT',
+      placeholder: "快对我说点什么吧~",
+      avatar     : 'mm',
+      meta       : guest,
+      pageSize   : '10' || 10,
+      visitor    : false,
+      lang       : '' || 'zh-cn',
+      path       : location.pathname,
+      recordIP   : false,
+      serverURLs : ''
+    });
+  }, window.Valine);
+});
+</script>
+
+</body>
+</html>

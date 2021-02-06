@@ -1,0 +1,13 @@
+# https://blog.optopia.xyz robots.txt
+
+User-agent: * 
+Allow: /
+Allow: /post/
+Disallow: /archives/
+Disallow: /categories/
+Disallow: /tags/
+
+
+
+Sitemap: https://blog.optopia.xyz/sitemap.xml
+Sitemap: https://blog.optopia.xyz/baidusitemap.xml
